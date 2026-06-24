@@ -1,0 +1,17 @@
+torch
+torchvision
+torchaudio
+numpy
+scipy
+librosa
+pandas
+tqdm
+matplotlib
+soundfile
+mir_eval
+pytorch-lightning
+tensorboard
+torchcodec
+wandb
+nnAudio
+pretty_midi
