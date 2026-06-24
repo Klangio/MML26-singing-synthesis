@@ -262,7 +262,7 @@ def main() -> None:
     print("Loading checkpoint...")
     model = LightningModuleSingingVoice.load_from_checkpoint(
         args.checkpoint_path,
-        weights_only=False,
+        weights_only=True,
     )
     print(f"Model loaded (OAF / Basic Pitch)")
     print(f"Thresholds - Onset: {model.onset_threshold:.3f}, "

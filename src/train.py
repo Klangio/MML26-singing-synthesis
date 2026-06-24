@@ -469,14 +469,14 @@ def main():
     print("=" * 70)
     print()
 
-    trainer.fit(model, train_loader, val_loader, ckpt_path=args.resume_from, weights_only=False)
+    trainer.fit(model, train_loader, val_loader, ckpt_path=args.resume_from, weights_only=True)
 
     print("\n" + "=" * 70)
     print("LOADING BEST CHECKPOINT FOR TESTING")
     print("=" * 70)
     best_model_path = checkpoint_callback.best_model_path
     print(f"Loading checkpoint: {best_model_path}")
-    model = LightningModuleSingingVoice.load_from_checkpoint(best_model_path, weights_only=False)
+    model = LightningModuleSingingVoice.load_from_checkpoint(best_model_path, weights_only=True)
 
     print("\n" + "=" * 70)
     print("STARTING TESTING")

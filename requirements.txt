@@ -9,7 +9,7 @@ tqdm
 matplotlib
 soundfile
 mir_eval
-pytorch-lightning
+pytorch-lightning==2.6.5
 tensorboard
 torchcodec
 wandb
