@@ -5,6 +5,12 @@ In this challenge we work with a slighlty modify version of [Basic Pitch](https:
 We have trained this model on real singing data.
 Can you take the note annotations that we have for that real data; create synthetic singing; train your own model, and match the performance of real data?
 
+## MergeKit Dataset 8 evaluator
+
+The [`eval_app`](./eval_app) directory contains a reproducible MergeKit model-soup
+workflow and Gradio evaluator for the 35-song Klangio validation set. Its README covers
+checkpoint conversion, merging, inference, metric/asset generation, and local launch.
+
 ## How do I use this dataset for the challenge?
 The only thing that you need to do is to put your data under the directory `syntheticdataset` (you have to create it) in the following format:
 ```bash

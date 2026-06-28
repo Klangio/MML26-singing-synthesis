@@ -1,0 +1,8 @@
+merge_method: linear
+dtype: float32
+parameters: {normalize: true}
+models:
+  - model: raw/best-epoch75-step003116.pt
+    parameters: {weight: 0.99}
+  - model: raw/syntheticdataset-soulx-best-epoch22-COnPOff_f1-0.2498.pt
+    parameters: {weight: 0.01}

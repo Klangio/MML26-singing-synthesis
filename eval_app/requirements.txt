@@ -1,0 +1,7 @@
+gradio==6.19.0
+numpy
+scipy
+soundfile
+safetensors
+pyyaml
+mergekit==0.1.4
